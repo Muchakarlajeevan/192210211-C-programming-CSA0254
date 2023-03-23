@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num,rem,reverse=0;
+    printf("Enter a number for find reverse\n");
+    scanf("%d",&num);
+    printf("You entered %d\n",num);
+    for(;num!=0; num=num/10){
+        rem=num%10;
+        reverse=reverse*10+rem;
+    }
+    printf("Reverse of the given number %d",reverse);
+    return 0;
+}
+  
+  
+  
+  out put:
+  
+  Enter a number for find reverse
+369852
+You entered 369852
+Reverse of the given number 258963
+--------------------------------
+Process exited after 3.444 seconds with return value 0
+Press any key to continue . . .
