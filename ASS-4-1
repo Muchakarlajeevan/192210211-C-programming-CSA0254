@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3, max;
+    
+    // input three numbers from user
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    
+    // find maximum using conditional operator
+    max = (num1 > num2) ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
+    
+    // print maximum
+    printf("Maximum number is: %d", max);
+    
+    return 0;
+}
+
+
+OUTPUT
+
+Enter three numbers: 23 46 56
+Maximum number is: 56
