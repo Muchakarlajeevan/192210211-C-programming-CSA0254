@@ -1,0 +1,23 @@
+he function should contain int main but it contains main which is error
+
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+
+    int a = 10;
+
+    if ((fork() == 0))
+
+        a++;
+
+    printf("%d\n", a);
+
+    return 0;
+}
+
+
+OUTPUT
+
+10
+11
