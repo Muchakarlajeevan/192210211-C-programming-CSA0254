@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    char ch;
+    
+    // input a character from user
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    
+    // check if character is alphabet using conditional operator
+    (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') ? printf("%c is an alphabet", ch) : printf("%c is not an alphabet", ch);
+    
+    return 0;
+}
+
+
+OUTPUT
+
+Enter a character: 1
+1 is not an alphabet
